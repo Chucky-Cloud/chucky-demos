@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 540">
+  <rect fill="#003399" width="810" height="540"/>
+  <g fill="#FFCC00" transform="translate(405,270)">
+    <g id="s">
+      <g id="c">
+        <path id="t" d="M0,-100 L5.88,-19.1 L95.11,-30.9 L16.18,11.76 L58.78,80.9 L0,-38.2 L-58.78,80.9 L-16.18,11.76 L-95.11,-30.9 L-5.88,-19.1 Z" transform="scale(0.3)"/>
+        <use href="#t" transform="rotate(30)"/>
+      </g>
+      <use href="#c" transform="rotate(60)"/>
+    </g>
+    <use href="#s" transform="rotate(120)"/>
+    <use href="#s" transform="rotate(240)"/>
+  </g>
+</svg>
