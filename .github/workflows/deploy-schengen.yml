@@ -44,6 +44,15 @@ jobs:
       - name: Install Chucky CLI
         run: npm install -g @chucky.cloud/cli
 
+      - name: Initialize git in workspace
+        working-directory: ${{ env.WORKING_DIR }}/workspace
+        run: |
+          git init
+          git config user.email "deploy@chucky.cloud"
+          git config user.name "Chucky Deploy"
+          git add -A
+          git commit -m "Deploy" --allow-empty
+
       - name: Deploy Workspace
         working-directory: ${{ env.WORKING_DIR }}/workspace
         env:
