@@ -47,8 +47,7 @@ jobs:
       - name: Deploy Workspace
         working-directory: ${{ env.WORKING_DIR }}/workspace
         env:
-          CHUCKY_PROJECT_ID: ${{ secrets.SCHENGEN_PROJECT_ID }}
-          CHUCKY_HMAC_SECRET: ${{ secrets.SCHENGEN_HMAC_SECRET }}
+          CHUCKY_API_KEY: ${{ secrets.CHUCKY_API_KEY }}
         run: chucky deploy
 
   deploy-pages:
