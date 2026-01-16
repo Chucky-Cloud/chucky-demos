@@ -93,7 +93,7 @@ function extractInitParams(): InitParams {
 
   // 3. Fallback to default demo token (for initial free usage)
   if (!token) {
-    const FALLBACK_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZW1vLXVzZXIiLCJpc3MiOiJqZDc3YXowNDl4andzdjBwYmpxYnJrZmp3czd6NTEzNiIsImlhdCI6MTc2ODMyNTk2NywiZXhwIjoxNzY4NDEyMzY3LCJidWRnZXQiOnsiYWkiOjUwMDAwMDAsImNvbXB1dGUiOjcyMDAsIndpbmRvdyI6ImRheSIsIndpbmRvd1N0YXJ0IjoiMjAyNi0wMS0xM1QxNzozOToyNy40NDRaIn19.EJef_wuPoef-Jwm20EKVXGOqVUJ0QSYR5FIum0wk7RM'
+    const FALLBACK_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkZW1vLXVzZXIiLCJpc3MiOiJqZDc3YXowNDl4andzdjBwYmpxYnJrZmp3czd6NTEzNiIsImlhdCI6MTc2ODU0ODYwMCwiZXhwIjoxODAwMDg0NjAwLCJidWRnZXQiOnsiYWkiOjEwMDAwMDAsImNvbXB1dGUiOjcyMDAsIndpbmRvdyI6Im1vbnRoIiwid2luZG93U3RhcnQiOiIyMDI2LTAxLTE2VDA3OjMwOjAwLjk0NloifX0.VWiKnlUsqHkHO2zw-HmmZHtLRlK0Da6CFpWxq77-L0M'
     console.log('[Chucky] Using default demo token')
     token = FALLBACK_TOKEN
   }
